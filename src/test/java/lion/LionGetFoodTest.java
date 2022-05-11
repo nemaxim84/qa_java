@@ -1,4 +1,4 @@
-package lion.tests;
+package lion;
 
 import com.example.Feline;
 import com.example.Lion;
@@ -28,7 +28,7 @@ public class LionGetFoodTest {
 
     @Test
     public void getFood() throws Exception {
-        Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        Mockito.when(feline.getFood(Mockito.anyString())).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         Assert.assertEquals(lion.getFood(), List.of("Животные", "Птицы", "Рыба"));
     }
 }

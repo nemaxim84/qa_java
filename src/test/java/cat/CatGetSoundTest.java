@@ -1,4 +1,4 @@
-package cat.tests;
+package cat;
 
 import com.example.Cat;
 import com.example.Feline;
@@ -19,8 +19,4 @@ public class CatGetSoundTest {
         Assert.assertEquals(cat.getSound(), "Мяу");
     }
 
-    @Test
-    public void getSoundError() {
-        Assert.assertNotEquals(cat.getSound(), "Гав");
-    }
 }

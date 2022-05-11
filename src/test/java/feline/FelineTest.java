@@ -1,4 +1,4 @@
-package feline.tests;
+package feline;
 
 import com.example.Animal;
 import com.example.Cat;
@@ -43,5 +43,10 @@ public class FelineTest {
     @Test
     public void getKittens() {
         Assert.assertEquals(feline.getKittens(), 1);
+    }
+
+    @Test
+    public void getKittensWhisParameter() {
+        Assert.assertEquals(feline.getKittens(2), 2);
     }
 }
