@@ -1,3 +1,5 @@
+package com.example;
+
 public class Account {
     private final String name;
 
